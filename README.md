@@ -1,116 +1,157 @@
-# FlaskAPIProjectTemplate
-这个是知识图谱组建立FlaskAPI项目的模板
+# Cross-language-tutorial-search
+跨语言教程检索 - 推荐系统
 
 ```
-project_root            整个代码项目的根目录
-│   README.md           对于整个项目的介绍
-│   .gitignore          对于某些文件和目录让Git忽略管理
-│   requirements.txt    声明整个项目依赖的Python库
-│   definitions.py      对于整个项目级别的一些常量进行定义，方便其他地方引用。默认有一个ROOT_DIR的常量是项目根目录。
-│                       在代码中千万不要使用绝对路径，要使用基于ROOT_DIR的相对路径。
+project_root            
+│   README.md           
+│   .gitignore          
+│   requirements.txt    
+│   definitions.py      
+│                       
 |
-└───app                 这是整个项目的核心代码的目录，一般就用项目名。
-│   │   __init__.py     蓝图注册
-│   └───module1         独立的功能模块接口
+└───app                 教程推荐
+│   │   __init__.py     
+│   └───module1         独立的功能模块接口1
 │   │   │   views.py    当前模块的视图，蓝图创建及路由配置
 │   │   │   models.py   当前模块的模型数据
 │   │   │   ...
-│   └───module2         独立的功能模块接口
+│   └───module2         独立的功能模块接口2
 │       │   views.py    当前模块的视图，蓝图创建及路由配置
 │       │   models.py   当前模块的模型数据
 │       │   ...
 │
-└───data                存放项目依赖的数据的目录
+└───data                
 │
-└───doc                 存放项目相关的文档
+└───doc                 文档
 │
-└───output              存放项目的输出，里面内容一般不进行Git托管，都是保留在本地的
+└───output              
 │
-└───script              这是目录底下存放一些执行脚本，一般是非常特定的。要和可复用的项目代码区别开来。
+└───script              
 │
-└───test                测试包，里面是与核心模块一一对应的测试文件，目录结构保持一致
+└───test                
 ```
 
-# 项目的README.md的模板
-来源[Github](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 
-# Project Title
 
-One Paragraph of project description goes here
+# Cross-language tutorial search
+
+这个项目实现了目前常见的retrieval-rerank架构的检索器，在教程/论坛预料上进行微调。我们构建了相关的训练数据集和知识图谱，并搭建出最终的推荐系统。
+
+This project implements the current common retrieval-rerank architecture for retrievalers, fine-tuning on tutorial/forum expectations. We build the relevant training dataset and knowledge graph, and build the final recommendation system.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+.
+.
+.
+.
+.
 
-### Prerequisites
+[//]: # (### Prerequisites)
 
-What things you need to install the software and how to install them
+[//]: # ()
+[//]: # (What things you need to install the software and how to install them)
 
-```
-Give examples
-```
+[//]: # ()
+[//]: # (```)
 
-### Installing
+[//]: # (Give examples)
 
-A step by step series of examples that tell you how to get a development env running
+[//]: # (```)
 
-Say what the step will be
+[//]: # ()
+[//]: # (### Installing)
 
-```
-Give the example
-```
+[//]: # ()
+[//]: # (A step by step series of examples that tell you how to get a development env running)
 
-And repeat
+[//]: # ()
+[//]: # (Say what the step will be)
 
-```
-until finished
-```
+[//]: # ()
+[//]: # (```)
 
-End with an example of getting some data out of the system or using it for a little demo
+[//]: # (Give the example)
 
-## Running the tests
+[//]: # (```)
 
-Explain how to run the automated tests for this system
+[//]: # ()
+[//]: # (And repeat)
 
-### Break down into end to end tests
+[//]: # ()
+[//]: # (```)
 
-Explain what these tests test and why
+[//]: # (until finished)
 
-```
-Give an example
-```
+[//]: # (```)
 
-### And coding style tests
+[//]: # ()
+[//]: # (End with an example of getting some data out of the system or using it for a little demo)
 
-Explain what these tests test and why
+[//]: # ()
+[//]: # (## Running the tests)
 
-```
-Give an example
-```
+[//]: # ()
+[//]: # (Explain how to run the automated tests for this system)
 
-## Deployment
+[//]: # ()
+[//]: # (### Break down into end to end tests)
 
-Add additional notes about how to deploy this on a live system
+[//]: # ()
+[//]: # (Explain what these tests test and why)
 
-## Built With
+[//]: # ()
+[//]: # (```)
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+[//]: # (Give an example)
 
-## Contributing
+[//]: # (```)
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+[//]: # ()
+[//]: # (### And coding style tests)
+
+[//]: # ()
+[//]: # (Explain what these tests test and why)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # (Give an example)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (## Deployment)
+
+[//]: # ()
+[//]: # (Add additional notes about how to deploy this on a live system)
+
+[//]: # ()
+[//]: # (## Built With)
+
+[//]: # ()
+[//]: # (* [Dropwizard]&#40;http://www.dropwizard.io/1.0.2/docs/&#41; - The web framework used)
+
+[//]: # (* [Maven]&#40;https://maven.apache.org/&#41; - Dependency Management)
+
+[//]: # (* [ROME]&#40;https://rometools.github.io/rome/&#41; - Used to generate RSS Feeds)
+
+[//]: # ()
+[//]: # (## Contributing)
+
+[//]: # ()
+[//]: # (Please read [CONTRIBUTING.md]&#40;https://gist.github.com/PurpleBooth/b24679402957c63ec426&#41; for details on our code of conduct, and the process for submitting pull requests to us.)
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/hyunsir/Cross-language-tutorial-search/tags).
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Zhang gaoyang** - *Initial work* - [hyunsir](https://github.com/hyunsir)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/hyunsir/Cross-language-tutorial-search/contributors) who participated in this project.
 
 ## License
 
@@ -118,6 +159,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* 可爱滴大师兄
+* 敬爱滴教授
+* 知识图谱组滴家人们
+* fdu滴小伙伴们
