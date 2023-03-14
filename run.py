@@ -10,10 +10,9 @@
 ------------------------------------------
 @Description:
 """
-from app import create_app
+import uvicorn
+from fastapp import create_fastapp
 
-# 加载
-app = create_app()
-
+fast_app = create_fastapp()
 if __name__ == '__main__':
-    app.run()
+    uvicorn.run(fast_app, host="0.0.0.0", port=4321)
