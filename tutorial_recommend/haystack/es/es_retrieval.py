@@ -13,9 +13,9 @@
 import time
 from haystack.document_stores import ElasticsearchDocumentStore
 from haystack.nodes import ElasticsearchRetriever
-from tutorial_recommend.util.constant_util import PreSufConstant
-from tutorial_recommend.util.file_util import FileUtil
-from preprocessor.good2mysql.record_document import DocumentRecord, RetrievalRecord
+from util import PreSufConstant
+from util import FileUtil
+from preprocessor.good2mysql.record_document import DocumentRecord
 from definitions import Config
 
 

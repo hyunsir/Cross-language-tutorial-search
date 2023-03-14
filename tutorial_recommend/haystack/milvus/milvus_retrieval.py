@@ -16,9 +16,9 @@ from haystack.nodes import EmbeddingRetriever
 from haystack.document_stores.milvus import MilvusDocumentStore
 # from android_recommend.haystack.milvus_document.milvus1 import Milvus1DocumentStore as MilvusDocumentStore
 
-from tutorial_recommend.util.path_util import PathUtil
-from tutorial_recommend.util.constant_util import PreSufConstant
-from tutorial_recommend.util.file_util import FileUtil
+from util import PathUtil
+from util import PreSufConstant
+from util import FileUtil
 from preprocessor.good2mysql.record_document import DocumentRecord
 
 
