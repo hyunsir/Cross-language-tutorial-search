@@ -16,8 +16,8 @@ from pprint import pprint
 
 from tqdm import tqdm
 
-from android_recommend.util import FileUtil
-from android_recommend.util.data_utils import DataUtils, AndroidDU
+from util import FileUtil
+from util.data_utils import DataUtils, AndroidDU
 from definitions import OrgAndroidData, AndroidDataGood0, AndroidDataGood, ANDROID_DIR
 from bs4 import BeautifulSoup
 
