@@ -30,15 +30,15 @@ class PathUtil:
 
     @staticmethod
     def mysql_config_path():
-        mysql_config_path = os.path.join(ROOT_DIR, 'mysql_config.json')
+        mysql_config_path = os.path.join(ROOT_DIR, 'config/mysql_config.json')
         return mysql_config_path
 
     @staticmethod
     def milvus_config_path():
-        milvus_config_path = os.path.join(ROOT_DIR, 'milvus_config.json')
+        milvus_config_path = os.path.join(ROOT_DIR, 'config/milvus_config.json')
         return milvus_config_path
 
     @staticmethod
     def es_config_path():
-        milvus_config_path = os.path.join(ROOT_DIR, 'es_config.json')
+        milvus_config_path = os.path.join(ROOT_DIR, 'config/es_config.json')
         return milvus_config_path

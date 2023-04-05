@@ -11,8 +11,8 @@
 @Description:
 """
 from milvus import Milvus
-from android_recommend.util import FileUtil
-from android_recommend.util.path_util import PathUtil
+from util.file_util import FileUtil
+from util.path_util import PathUtil
 
 
 class MilvusUtil:

@@ -19,6 +19,11 @@ tutorial_recommend = APIRouter(tags=["tutorial_recommend"])
 def index():
     return 'Hello tutorial recommend!'
 
+# @tutorial_recommend.api_route('/query_title_es', methods=['GET', 'POST'])
+# def query_title_es():
+#
+
+
 
 def response(code, msg, data=None):
     return JSONResponse(content={'code': code, 'msg': msg, 'data': data})

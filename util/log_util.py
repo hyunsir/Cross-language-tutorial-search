@@ -13,7 +13,7 @@
 
 import logging
 
-from android_recommend.util.path_util import PathUtil
+from util.path_util import PathUtil
 
 
 class LogUtil:

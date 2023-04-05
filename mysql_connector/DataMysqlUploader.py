@@ -15,18 +15,41 @@ import pymysql
 from pymysql import OperationalError
 from DBUtils.PooledDB import PooledDB  # pip install DBUtills==1.3
 # sdkg web api  todo
-from util import FileUtil
+from util.file_util import FileUtil
 from definitions import Config
 
 connection_config = FileUtil.load_data_list(Config.CONNECTION_CONFIG)
+
+
 class DBName:
     ANDROID_RE = 'android_recommend_data'
     AUTO_SCRAPY = 'autoscrapy'
+
 
 # 5为连接池里的最少连接数，setsession=['SET AUTOCOMMIT = 1']是用来设置线程池是否打开自动更新的配置，0为False，1为True
 class Pools:
     conn_name_list = ['ali_0', 'in_89']
     pools_dict = {'ali_0': {}, 'in_89': {}}
+
+    @staticmethod
+    def check_db_in_connect(host, port, user, password, db_name):
+        connection = pymysql.connect(host=host, port=port,
+                                     user=user, password=password)
+        try:
+            with connection.cursor() as cursor:
+                # 检查数据库是否存在
+                cursor.execute(
+                    f"SELECT COUNT(*) FROM information_schema.schemata WHERE schema_name = '{db_name}';")
+                result = cursor.fetchone()
+                if result[0] == 0:
+                    # 如果数据库不存在，则创建数据库
+                    cursor.execute(
+                        f"CREATE DATABASE {db_name} DEFAULT  CHARACTER SET  utf8mb4 DEFAULT COLLATE  utf8mb4_0900_ai_ci;;")
+                    print(f"数据库 '{db_name}' 已创建.")
+                else:
+                    print(f"数据库 '{db_name}' 已存在.")
+        finally:
+            connection.close()
 
     @classmethod
     def init_ali_0(cls, db=DBName.ANDROID_RE):

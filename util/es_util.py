@@ -17,8 +17,8 @@ from ssl import create_default_context
 import json
 from tqdm import tqdm
 
-from android_recommend.util.log_util import LogUtil
-from android_recommend.util.path_util import PathUtil
+from util.log_util import LogUtil
+from util.path_util import PathUtil
 
 logger = LogUtil.get_log_util()
 

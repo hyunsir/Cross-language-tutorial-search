@@ -1,0 +1,73 @@
+[
+  {
+    "IP": 0,
+    "db": "android_recommend_data",
+    "table": "tutorial_bird",
+    "columns": [
+      "id",
+      "title"
+    ],
+    "source_id": 561
+  },
+  {
+    "IP": 0,
+    "db": "android_recommend_data",
+    "table": "tutorial_bokeyuan",
+    "columns": [
+      "id",
+      "title"
+    ],
+    "source_id": 562
+  },
+  {
+    "IP": 0,
+    "db": "android_recommend_data",
+    "table": "tutorial_csdn",
+    "columns": [
+      "id",
+      "title"
+    ],
+    "source_id": 563
+  },
+  {
+    "IP": 0,
+    "db": "android_recommend_data",
+    "table": "tutorial_ds",
+    "columns": [
+      "id",
+      "title"
+    ],
+    "source_id": 564
+  },
+  {
+    "IP": 0,
+    "db": "android_recommend_data",
+    "table": "tutorial_jianshu",
+    "columns": [
+      "id",
+      "title"
+    ],
+    "source_id": 565
+  },
+  {
+    "IP": 0,
+    "db": "android_recommend_data",
+    "table": "tutorial_w3s",
+    "columns": [
+      "id",
+      "title"
+    ],
+    "source_id": 566
+  },
+  {
+    "IP": 0,
+    "db": "stackoverflow_2022",
+    "table": "posts",
+    "columns": [
+      "Id",
+      "Title"
+    ],
+    "condition": "PostTypeId=1  limit 500000",
+    "source_id": 567
+  }
+]
