@@ -1,7 +1,7 @@
 tqdm~=4.64.0
 bs4==0.0.1
 sqlalchemy
-pymysql~=1.0.2
+pymysql~=2.2.5
 gevent
 gunicorn
 absl-py

@@ -45,12 +45,14 @@ class MilvusRetrieval:
             embedding_dim=self.embedding_dim,
             index=self.index,
             similarity=self.similarity,
-            duplicate_documents='skip'
+            duplicate_documents='skip',
+            search_param={"params":{"nprobe": 10}},
+            # index_type='FLAT'
         )
         self.retriever: EmbeddingRetriever = EmbeddingRetriever(
             document_store=self.document_store,
             embedding_model=self.model_path,  # model_path or name in hugging Face
-            model_format='sentence_transformers'
+            # model_format='sentence_transformers'
         )
 
     # def __del__(self):

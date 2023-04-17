@@ -67,7 +67,7 @@
       "Id",
       "Title"
     ],
-    "condition": "PostTypeId=1  limit 500000",
+    "condition": "PostTypeId=1  limit 10000",
     "source_id": 567
   }
 ]

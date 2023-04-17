@@ -44,7 +44,7 @@ class Pools:
                 if result[0] == 0:
                     # 如果数据库不存在，则创建数据库
                     cursor.execute(
-                        f"CREATE DATABASE {db_name} DEFAULT  CHARACTER SET  utf8mb4 DEFAULT COLLATE  utf8mb4_0900_ai_ci;;")
+                        f"CREATE DATABASE {db_name} DEFAULT  CHARACTER SET  utf8mb3 DEFAULT COLLATE  utf8mb3_general_ci;;")
                     print(f"数据库 '{db_name}' 已创建.")
                 else:
                     print(f"数据库 '{db_name}' 已存在.")
